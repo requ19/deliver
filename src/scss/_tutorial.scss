@@ -1,0 +1,146 @@
+.tutorial {
+    padding: 134px 0px 120px;
+
+    &__title {
+        color: #35B8BE;
+        text-align: center;
+        font-family: Inter;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 1.65px;
+        margin-bottom: 66px;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        width: 100%;
+        position: relative;
+
+        i {
+            top: 50%;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            font-size: 1.25rem;
+            position: absolute;
+            text-align: center;
+            line-height: 50px;
+            transform: translateY(-50%);
+            transition: transform 0.1s linear;
+        }
+
+        i:active {
+            transform: translateY(-50%) scale(0.85);
+        }
+
+        i:first-child {
+            left: -22px;
+        }
+
+        i:last-child {
+            right: -22px;
+        }
+
+        .carousel {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: calc((100% / 3) - 12px);
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 16px;
+            border-radius: 8px;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            padding: 8px;
+
+            .no-transition {
+                scroll-behavior: auto;
+            }
+
+            .dragging {
+                scroll-snap-type: none;
+                scroll-behavior: auto;
+
+                .card {
+                    cursor: grab;
+                    user-select: none;
+                }
+            }
+
+
+
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel :where(.card, .img) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            scroll-snap-align: start;
+            height: 342px;
+            list-style: none;
+            background: #fff;
+            cursor: pointer;
+            padding-bottom: 15px;
+            flex-direction: column;
+            border-radius: 8px;
+
+            .img {
+
+                img {
+                    width: 333px;
+                    height: 267px;
+                    object-fit: cover;
+                    border: 4px solid #fff;
+                }
+            }
+
+            h2 {
+                color: #08090A;
+                text-align: center;
+                font-family: Inter;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22px;
+                /* 110% */
+                letter-spacing: 0.66px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: #546285;
+                text-align: center;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 27px;
+                /* 150% */
+                letter-spacing: 0.36px;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .wrapper .carousel {
+            grid-auto-columns: calc((100% / 2) - 9px);
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .wrapper .carousel {
+            grid-auto-columns: 100%;
+        }
+    }
+
+}

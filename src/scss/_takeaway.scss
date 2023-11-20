@@ -1,0 +1,40 @@
+.takeaway {
+    background: url(../img/takeaway/bgshape.png) center/cover;
+    padding: 140px 0px;
+
+    &__col-bg {
+        background: url(../img/takeaway/take-img.png) center/cover;
+    }
+
+    &__title {
+        color: #35B8BE;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 1.65px;
+        margin: 100px 0 47px;
+        width: 576px;
+    }
+
+    &__text {
+        color: #546285;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        width: 578px;
+        margin-bottom: 47px;
+    }
+
+    .btn {
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        white-space: nowrap;
+        padding: 21px 20px;
+    }
+}

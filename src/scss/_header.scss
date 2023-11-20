@@ -1,0 +1,86 @@
+.header {
+    &__common {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background: #35B8BE;
+        padding: 14px;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+
+        &-link {
+            color: #FFF;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 22px 0px;
+    }
+
+    &__logo {}
+
+    .logo-img {}
+
+    .list {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            color: #28224B;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+
+            &:hover {
+                color: #35B8BE;
+            }
+        }
+
+        .cart {
+            width: 55px;
+            height: 55px;
+            background: url('../img/header/bg.png') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            &__counter {
+                border-radius: 100px;
+                background: #FFF;
+                box-shadow: 7px 7px 25px 0px rgba(126, 130, 143, 0.27);
+                height: 25px;
+                width: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: -6px;
+                right: -4px;
+                color: #35B8BE;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+            }
+        }
+
+
+    }
+}

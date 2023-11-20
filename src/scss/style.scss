@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+@import url(/src/libs/bootstrap-grid.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+input {
+    outline: none;
+}
+
+.blue {
+    color: #35B8BE;
+}
+
+.btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 21px 35px;
+    background: url(../img/btn-bg.svg) center/cover;
+    width: 194px;
+    height: 60px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.gray {
+    color: #1B9097;
+}
+
+@import '_header.scss';
+
+@import '_home.scss';
+
+@import '_about.scss';
+
+@import '_tutorial.scss';
+
+@import '_menu.scss';
+
+@import '_order.scss';
+
+@import '_takeaway';
+
+@import '_support.scss';
+
+@import '_footer.scss';
+
+@import '_overlay'
+

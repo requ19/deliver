@@ -1,0 +1,143 @@
+.menu {
+    background: url(../img/menu/bg.png) center center/cover;
+    padding: 154px 0 140px;
+    
+    &__card {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 40px 26px;
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: #010002;
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px;
+        letter-spacing: 1.65px;
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        color: #546285;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        width: 466px;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        width: 147px;
+        height: 52px;
+        border: 1px solid rgba(97, 114, 131, 0.20);
+        padding: 16px 46px;
+        border-radius: 5px;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        transition: 0.4s;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        padding: 40px 0px;
+    }
+
+    &__card {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__card-title {
+        color: #08090A;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.6px;
+    }
+
+    &__hum-img {
+        display: block;
+    }
+
+    &__card-titleprice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    &__card-price {
+        color: #35B8BE;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    &__card-text {
+        color: #546285;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        margin-bottom: 8px;
+    }
+
+    &__card-amount {
+        display: inline-block;
+        border-radius: 6px;
+        border: 1px solid #DDD;
+        background: #FAFAFA;
+        padding: 15px 26px;
+    }
+
+    &__card-btn {
+        border-radius: 6px;
+        background: #35B8BE;
+        padding: 15px 12px;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+    }
+    &__btn_active {
+        background: #35B8BE;
+        border: none;
+        color: #fff;
+    }
+
+    &__tabs {
+        display: none; /* по умолчанию прячем все блоки */
+      }
+    &__tabs_active {
+        display: block; /* по умолчанию показываем нужный блок */
+
+      }
+    .btn { 
+        border: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
